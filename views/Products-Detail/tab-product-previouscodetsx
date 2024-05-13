@@ -1,0 +1,406 @@
+import Image from "next/image";
+import React, { useState } from "react";
+import {
+  TabContent,
+  TabPane,
+  Nav,
+  NavItem,
+  NavLink,
+  Row,
+  Col,
+  Form,
+  Input,
+  Label,
+  Table,
+} from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThumbsDown, faThumbsUp } from "@fortawesome/free-solid-svg-icons"; // Using free-solid-svg-icons instead
+
+import { BACKEND_URL } from "utils/constants";
+
+interface ProductDeskProps {
+  item: any;
+}
+
+const TabProduct: React.FC<ProductDeskProps> = ({ item }) => {
+  const [activeTab, setActiveTab] = useState("1");
+  const labels = [
+    "Excellent   ",
+    "Very Good",
+    "Recommended",
+    "Not Good",
+    "Very Bad",
+  ];
+
+  const values = [4521, 4520, 4519, 4518, 4517];
+  const [likeClicked, setLikeClicked] = useState(false);
+  const [dislikeClicked, setDislikeClicked] = useState(false);
+
+  const [likeCount, setLikeCount] = useState(0);
+  const [dislikeCount, setDislikeCount] = useState(0);
+
+  const handleLikeClick = () => {
+    setLikeCount(likeCount + 1);
+  };
+
+  const handleDislikeClick = () => {
+    setDislikeCount(dislikeCount + 1);
+  };
+
+  const product = item;
+
+  function transformImageUrl(apiImageUrl) {
+    return `${process.env.NEXT_PUBLIC_BACKEND_URL}/${apiImageUrl.replace(
+      / /g,
+      "%20"
+    )}`;
+  }
+
+  return (
+    <>
+      {product && (
+        <section className="tab-product tab-exes creative-card creative-inner mb-0">
+          <Row>
+            <Col sm="12" lg="12">
+              <Nav tabs className="nav-material" id="top-tab" role="tablist">
+                <NavItem>
+                  <NavLink
+                    className={activeTab === "1" ? "active" : ""}
+                    onClick={() => setActiveTab("1")}
+                  >
+                    Description
+                    <div className="material-border"></div>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    className={activeTab === "2" ? "active" : ""}
+                    onClick={() => setActiveTab("2")}
+                  >
+                    Specification
+                    <div className="material-border"></div>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    className={activeTab === "3" ? "active" : ""}
+                    onClick={() => setActiveTab("3")}
+                  >
+                    Reviews
+                    <div className="material-border"></div>
+                  </NavLink>
+                </NavItem>
+              </Nav>
+              <TabContent className="nav-material" activeTab={activeTab}>
+                <TabPane tabId="1">
+                  <p dangerouslySetInnerHTML={{ __html: product.details }} />
+                </TabPane>
+                <TabPane tabId="2">
+                  <Table
+                    border={1}
+                    responsive
+                    className="table-striped table-compar table-bordered tabl"
+                  >
+                    <thead>
+                      <tr className="th-compare">
+                        <th className="product-name">Product Name</th>
+                        <td className="item-row">{product.name}</td>
+                      </tr>
+                    </thead>
+                    <tbody id="table-compare">
+                      <tr>
+                        <th className="product-name">Model</th>
+                        <td className="item-row">
+                          <p>{product.model_no}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th className="product-name">Availability</th>
+                        <td className="item-row">
+                          <p>Available In stock</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th className="product-name">Minimum Orders</th>
+                        <td className="item-row">
+                          <p>{product.min_order}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th className="product-name">Warranty days</th>
+                        <td className="item-row">
+                          <div className="product-price product_price">
+                            <strong>On Sale: </strong>
+                            <span>{product.new_warranty_days}</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th className="product-name">Return Days</th>
+                        <td className="item-row">
+                          <p>{product.new_return_days}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th className="product-name">
+                          <h4 style={{ color: "gray" }}>Dimensions</h4>
+                        </th>
+                      </tr>
+                      <tr>
+                        <th className="product-name">Weight</th>
+                        <td className="item-row">
+                          <p>
+                            {product.weight} {product.weight_unit}
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th className="product-name">Height</th>
+                        <td className="item-row">
+                          <p>
+                            {product.height} {product.m_unit}
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th className="product-name">Width</th>
+                        <td className="item-row">
+                          <p>
+                            {product.width} {product.m_unit}
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th className="product-name">Depth</th>
+                        <td className="item-row">
+                          <p>
+                            {product.depth} {product.m_unit}
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th className="product-name">Brand</th>
+                        <td className="item-row">
+                          {product.brand ? (
+                            <Image
+                              src={`${BACKEND_URL}/${product.brand.logo}`}
+                              width={80}
+                              height={50}
+                            />
+                          ) : (
+                            <p>N/A</p>
+                          )}
+                        </td>
+                      </tr>
+                      <tr>
+                        <th className="product-name">Color.......</th>
+                        <td className="item-row">
+                          <p>
+                            {product.color < 0
+                              ? product.color.map(() => {
+                                  return <span>{product.color}</span>;
+                                })
+                              : "N/A"}
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </TabPane>
+                <TabPane tabId="3">
+                  <br />
+
+                 <div>
+                 <h4>Customer Reviews (5264)</h4>
+                  <br />
+                  {/* review stars ...... */}
+                  <div className="row">
+                    <div className="col">
+                      <div className="average">
+                        <div
+                          className="container-star"
+                          style={{ display: "flex" }}
+                        >
+                          {[...Array(5)].map((_, starIndex) => (
+                            <img
+                              key={starIndex}
+                              className="star"
+                              src="//laz-img-cdn.alicdn.com/tfs/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                              style={{
+                                width: "33.25px",
+                                height: "33.25px",
+                                filter:
+                                  starIndex < 4 ? "none" : "grayscale(100%)",
+                              }}
+                            />
+                          ))}
+                          <span
+                            style={{
+                              marginLeft: "20px",
+                              fontSize: "20px",
+                              fontWeight: "bold",
+                            }}
+                          >
+                            4.8
+                          </span>
+                        </div>
+                        <p style={{}}>
+                          All reviews replaced by verified customers{" "}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col">
+                      {labels.map((label, rowIndex) => (
+                        <div
+                          key={rowIndex}
+                          style={{ display: "flex", alignItems: "center" }}
+                        >
+                          <span
+                            style={{ width: "100px", paddingRight: "10px" }}
+                          >
+                            {label}
+                          </span>
+                          {[...Array(5)].map((_, starIndex) => (
+                            <img
+                              key={starIndex}
+                              className="star"
+                              src="//laz-img-cdn.alicdn.com/tfs/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                              style={{
+                                width: "15.96px",
+                                height: "15.96px",
+                                filter:
+                                  starIndex < 5 - rowIndex
+                                    ? "none"
+                                    : "grayscale(100%)",
+                              }}
+                            />
+                          ))}
+                          <span style={{ paddingLeft: "10px" }}>
+                            ({values[rowIndex]})
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <hr />
+                  {/*  review entered  */}
+                  <div
+                    className=" border border-gray-500 p-4 my-3"
+                    style={{ backgroundColor: "rgb(254 ,249,249)" }}
+                  >
+                    <div className="d-flex justify-content-between">
+                      <div className="mr-2">Malik Zubair</div>
+                      <div>07/02/2024</div>
+                    </div>
+
+                    <div className="d-flex ">
+                      <div className="star">
+                        {[...Array(5)].map((_, starIndex) => (
+                          <img
+                            key={starIndex}
+                            className="star"
+                            src="//laz-img-cdn.alicdn.com/tfs/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                            style={{
+                              width: "15.96px",
+                              height: "15.96px",
+                              filter:
+                                starIndex < 5 ? "none" : "grayscale(100%)",
+                            }}
+                          />
+                        ))}
+                      </div>
+                      <div> Excellent</div>
+                    </div>
+                    <div className="mt-2 text-gray-700">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Numquam, recusandae! Provident cumque repellat eos animi.
+                      Perspiciatis doloribus doloremque distinctio cumque
+                      maiores enim iste facilis, voluptatum fuga optio cum,
+                      maxime corporis.
+                    </div>
+                    <div className="d-flex justify-content-between  mt-3">
+                      <div className="products gap-5">
+                        <img
+                          style={{
+                            width: "80px",
+                            height: "70px",
+                            paddingRight: "15px",
+                          }}
+                          src="/images/layout-2/rounded-cat/10.jpeg"
+                        ></img>
+                        <img
+                          style={{
+                            width: "80px",
+                            height: "70px",
+                            paddingRight: "15px",
+                          }}
+                          src="/images/layout-2/rounded-cat/10.jpeg"
+                        ></img>
+                        <img
+                          style={{
+                            width: "80px",
+                            height: "70px",
+                            paddingRight: "15px",
+                          }}
+                          src="/images/layout-2/rounded-cat/10.jpeg"
+                        ></img>
+                        <img
+                          style={{
+                            width: "80px",
+                            height: "70px",
+                            paddingRight: "15px",
+                          }}
+                          src="/images/layout-2/rounded-cat/10.jpeg"
+                        ></img>
+                      </div>
+                      <div className=" mt-4 ">
+                        <FontAwesomeIcon
+                          icon={faThumbsUp}
+                          onClick={handleLikeClick}
+                          style={{
+                            cursor: "pointer",
+                            color: "green",
+                            fontSize: "24px",
+                            marginRight: "8px",
+                          }}
+                        />
+                        <span
+                          className="mr-2 ml-2"
+                          style={{ fontSize: "18px" }}
+                        >
+                          {likeCount}
+                        </span>
+                        <FontAwesomeIcon
+                          icon={faThumbsDown}
+                          onClick={handleDislikeClick}
+                          style={{
+                            cursor: "pointer",
+                            color: "red",
+                            fontSize: "24px",
+                            marginRight: "8px",
+                          }}
+                        />
+                        <span
+                          className="mr-2 ml-2"
+                          style={{ fontSize: "18px" }}
+                        >
+                          {dislikeCount}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+
+                {/* ...... */}
+                  
+                </TabPane>
+              </TabContent>
+            </Col>
+          </Row>
+        </section>
+      )}
+    </>
+  );
+};
+
+export default TabProduct;
