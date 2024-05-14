@@ -48,7 +48,7 @@ const Index = () => {
               <div
                 className="line w-100  "
                 style={{
-                  backgroundColor: "var(--theme-color1)",
+                  backgroundColor: "Black",
                   fontSize: "0.9rem",
                   fontWeight: "bold",
                   width: "100%",
@@ -153,7 +153,7 @@ const Index = () => {
             <div
               className="line w-100  "
               style={{
-                backgroundColor: "var(--theme-color1)",
+                backgroundColor: "Black",
                 fontSize: "0.9rem",
                 fontWeight: "bold",
                 width: "100%",
@@ -357,7 +357,7 @@ const Index = () => {
             <div
               className="line w-100  "
               style={{
-                backgroundColor: "var(--theme-color1)",
+                backgroundColor: "Black",
                 fontSize: "0.9rem",
                 fontWeight: "bold",
                 color: "white",
@@ -429,7 +429,7 @@ const Index = () => {
             <div
               className="line w-100  "
               style={{
-                backgroundColor: "var(--theme-color1)",
+                backgroundColor: "Black",
                 fontSize: "0.9rem",
                 fontWeight: "bold",
                 color: "white",

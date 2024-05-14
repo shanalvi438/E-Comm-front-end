@@ -30,7 +30,7 @@ const ByCategory: NextPage<byCategory> = ({ category }) => {
   // Function to fetch subcategories for a category
   const fetchCategories = async (menuId) => {
     const response = await fetch(
-      `https://18.235.14.45/api/categories/${menuId}`
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/categories/${menuId}`
     );
     const data = await response.json();
     setCategories((prev) => ({ ...prev, [menuId]: data.data }));

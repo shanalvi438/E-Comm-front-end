@@ -12,7 +12,7 @@ interface ProductService {
 
 // function transformUrl(apiUrl) {
 //   if (apiUrl) {
-//     return `${process.env.NEXT_PUBLIC_BACKEND_URL}/${apiUrl.replace(
+//     return `${apiUrl.replace(
 //       / /g,
 //       "%20"
 //     )}`;

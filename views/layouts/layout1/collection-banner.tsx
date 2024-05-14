@@ -10,7 +10,7 @@ interface CollectionBannerProps {
 
 const CollectionBannerList = ({ banner }) => {
   function transformImageUrl(apiImageUrl) {
-    return `${process.env.NEXT_PUBLIC_BACKEND_URL}/${apiImageUrl.replace(
+    return `${process.env.NEXT_PUBLIC_BACKEND_URL}${apiImageUrl.replace(
       / /g,
       "%20"
     )}`;
@@ -21,12 +21,10 @@ const CollectionBannerList = ({ banner }) => {
     <Col md="4">
       <div className="collection-banner-main banner-1 ">
         <div
-          className="collection-img img-fluid w-100"
+          className="collection-img img-fluid"
           style={{
             position: "relative",
             overflow: "hidden",
-            width: "100%",
-            height: "100%",
           }}
         >
           <Media

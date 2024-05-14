@@ -2,7 +2,7 @@ import React from "react";
 
 const CollectionBannerList1 = ({ banner }) => {
   function transformImageUrl(apiImageUrl) {
-    return `${process.env.NEXT_PUBLIC_BACKEND_URL}/${apiImageUrl.replace(
+    return `${process.env.NEXT_PUBLIC_BACKEND_URL}${apiImageUrl.replace(
       / /g,
       "%20"
     )}`;

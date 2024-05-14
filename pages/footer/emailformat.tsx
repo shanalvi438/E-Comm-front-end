@@ -18,7 +18,7 @@ const EmailFormat = () => {
             <a href="#">
               <Link href="#">
                 <strong>
-                  <span style={{ color: "var(--theme-color1)" }}>
+                  <span style={{ color: "Black" }}>
                     Support Center
                   </span>
                 </strong>

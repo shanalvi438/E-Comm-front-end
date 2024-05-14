@@ -54,7 +54,7 @@ const Brands: NextPage = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/brands`
+           `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/brands`
         );
         setBrandList(response.data.data);
       } catch (error) {
@@ -67,7 +67,7 @@ const Brands: NextPage = () => {
 
   function transformImageUrl(apiImageUrl) {
     if (apiImageUrl) {
-      return `${process.env.NEXT_PUBLIC_BACKEND_URL}/${apiImageUrl.replace(
+      return  `${process.env.NEXT_PUBLIC_BACKEND_URL}/${apiImageUrl.replace(
         / /g,
         "%20"
       )}`;

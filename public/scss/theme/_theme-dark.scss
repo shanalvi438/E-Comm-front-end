@@ -111,7 +111,7 @@ body {
   }
   .category-header-4 {
     .sm-horizontal {
-      background-color: var(--theme-color1);
+      background-color: Black;
     }
     .pixelstrap a {
       color: $white !important;
@@ -1504,7 +1504,7 @@ body {
             color: $font-layout-4;
 
             &.active {
-              color: var(--theme-color1);
+              color: Black;
             }
           }
         }
@@ -1708,7 +1708,7 @@ body {
         li {
           &.active {
             a {
-              color: var(--theme-color1);
+              color: Black;
             }
           }
 
@@ -1980,7 +1980,7 @@ body {
         }
 
         a {
-          color: var(--theme-color1);
+          color: Black;
           background-color: $light-layout;
         }
       }
@@ -2018,7 +2018,7 @@ body {
 
     .filter-button {
       .active {
-        background-color: var(--theme-color1);
+        background-color: Black;
       }
 
       background-color: $dark-layout;

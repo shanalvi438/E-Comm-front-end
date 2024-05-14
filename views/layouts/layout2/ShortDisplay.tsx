@@ -12,7 +12,7 @@ const ShortDisplay: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/d_product`);
+        const res = await axios.get( `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/d_product`);
         setProducts(res.data.DealProduct);
         setCoupens(res.data.Coupons);
         

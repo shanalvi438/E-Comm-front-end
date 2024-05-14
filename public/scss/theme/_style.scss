@@ -102,7 +102,7 @@ ul {
 }
 
 ::selection {
-  background-color: var(--theme-color1);
+  background-color: Black;
   color: var(--theme-color2);
 }
 
@@ -147,8 +147,8 @@ label {
 
 .form-check-input {
   &:checked {
-    background-color: var(--theme-color1);
-    border-color: var(--theme-color1);
+    background-color: Black;
+    border-color: Black;
   }
 
   &:focus {
@@ -327,7 +327,7 @@ button:focus {
 }
 
 .txt-default {
-  color: var(--theme-color1);
+  color: Black;
 }
 
 .bg-light0 {
@@ -708,7 +708,7 @@ button {
   padding: 18px 50px;
   font-weight: 700;
   color: $white !important;
-  background-color: var(--theme-color1);
+  background-color: Black;
   border-radius: 25px;
   position: relative;
   transition: all 0.3s;
@@ -718,11 +718,11 @@ button {
 
   &.btn-outline {
     background-color: $white;
-    border: 2px solid var(--theme-color1);
+    border: 2px solid Black;
     color: $dark !important;
 
     &:hover {
-      background-color: var(--theme-color1);
+      background-color: Black;
       color: $white !important;
     }
   }
@@ -747,10 +747,10 @@ button {
 
   &.btn-outline {
     background-color: transparent;
-    border: 1px solid var(--theme-color1);
+    border: 1px solid Black;
 
     &:hover {
-      background-color: var(--theme-color1);
+      background-color: Black;
     }
   }
 
@@ -765,7 +765,7 @@ button {
   padding: 18px 45px;
   font-weight: 700;
   color: $white !important;
-  background-color: var(--theme-color1);
+  background-color: Black;
   position: relative;
   transition: all 0.3s;
   display: inline-block;
@@ -775,11 +775,11 @@ button {
 
   &.btn-outline {
     background-color: $white;
-    border: 2px solid var(--theme-color1);
+    border: 2px solid Black;
     color: $dark !important;
 
     &:hover {
-      background-color: var(--theme-color1);
+      background-color: Black;
       color: $white !important;
     }
   }
@@ -801,7 +801,7 @@ button {
   background-color: var(--theme-color2);
 
   &.services-inverse {
-    background-color: var(--theme-color1);
+    background-color: Black;
   }
 
   .service-block {
@@ -842,7 +842,7 @@ button {
     .service-block {
       .media {
         svg {
-          fill: var(--theme-color1);
+          fill: Black;
         }
 
         h5 {
@@ -1081,13 +1081,13 @@ button {
 
           &:first-child {
             a {
-              color: var(--theme-color1);
+              color: Black;
               font-weight: 700;
             }
           }
 
           &:hover {
-            color: var(--theme-color1);
+            color: Black;
             cursor: pointer;
           }
         }
@@ -1103,7 +1103,7 @@ button {
   background-color: var(--theme-color2);
 
   &.testimonial-inverse {
-    background: var(--theme-color1);
+    background: Black;
   }
 
   .testimonial-contain {
@@ -1191,7 +1191,7 @@ button {
    7. Deal banner CSS start
 ==========================*/
 .deal-banner {
-  background-color: var(--theme-color1);
+  background-color: Black;
   padding: 40px 0;
 
   .deal-banner-containe {
@@ -1252,7 +1252,7 @@ button {
       color: $dark;
 
       span {
-        color: var(--theme-color1);
+        color: Black;
 
         + span {
           color: var(--theme-color2);
@@ -1267,7 +1267,7 @@ button {
       padding: 5px;
 
       .rounded-subcontain {
-        background-color: var(--theme-color1);
+        background-color: Black;
         color: $white;
         text-transform: uppercase;
         padding: 18px 0;
@@ -1279,7 +1279,7 @@ button {
       }
 
       &.rounded-inverse {
-        border: 2px dashed var(--theme-color1);
+        border: 2px dashed Black;
 
         .rounded-subcontain {
           background-color: var(--theme-color2);
@@ -1293,7 +1293,7 @@ button {
    9. Contact banner CSS start
 ==============================*/
 .contact-banner {
-  background-color: var(--theme-color1);
+  background-color: Black;
   padding: 20px 0;
 
   &.contact-banner-inverse {
@@ -1360,7 +1360,7 @@ button {
       }
 
       .btn-rounded {
-        background-color: var(--theme-color1);
+        background-color: Black;
       }
     }
   }
@@ -1386,7 +1386,7 @@ button {
     }
 
     &:after {
-      background: var(--theme-color1);
+      background: Black;
       content: "";
       position: absolute;
       z-index: -1;
@@ -1452,7 +1452,7 @@ button {
 
 //       span {
 //         a {
-//           color: var(--theme-color1);
+//           color: Black;
 //           text-transform: capitalize;
 //           font-weight: 700;
 //           letter-spacing: 0.03em;
@@ -1468,7 +1468,7 @@ button {
 
 //       h4 {
 //         text-transform: capitalize;
-//         color: var(--theme-color1);
+//         color: Black;
 //       }
 
 //       p {
@@ -1505,7 +1505,7 @@ button {
 //       position: absolute;
 //       top: 5%;
 //       left: 0;
-//       background-color: var(--theme-color1);
+//       background-color: Black;
 //       padding: 2px 10px;
 //       color: $white;
 //     }
@@ -1525,7 +1525,7 @@ button {
 //       font-weight: 700;
 //       text-align: center;
 //       text-transform: uppercase;
-//       background: var(--theme-color1);
+//       background: Black;
 //       line-height: 1.2;
 //     }
 
@@ -1594,7 +1594,7 @@ button {
       padding: 50px;
 
       h3 {
-        color: var(--theme-color1);
+        color: Black;
         text-transform: uppercase;
         font-size: 30px;
         line-height: 1;
@@ -1626,7 +1626,7 @@ button {
     &.banner-1 {
       .collection-banner-contain {
         h3 {
-          color: var(--theme-color1);
+          color: Black;
           text-transform: capitalize;
           font-size: 36px;
           font-weight: 500;
@@ -1697,7 +1697,7 @@ button {
 
         h4 {
           margin-top: 18px;
-          color: var(--theme-color1);
+          color: Black;
           font-size: 18px;
           margin-bottom: 100px;
           text-transform: inherit;
@@ -1712,7 +1712,7 @@ button {
 
       .collection-banner-contain {
         h3 {
-          color: var(--theme-color1);
+          color: Black;
           text-transform: capitalize;
           font-size: 24px;
           font-weight: 400;
@@ -1755,7 +1755,7 @@ button {
         }
 
         h4 {
-          color: var(--theme-color1);
+          color: Black;
           font-weight: 700;
           font-size: 72px;
           text-transform: capitalize;
@@ -1777,7 +1777,7 @@ button {
         padding: 25px;
 
         h6 {
-          color: var(--theme-color1);
+          color: Black;
           text-transform: capitalize;
           font-weight: 700;
         }
@@ -1798,7 +1798,7 @@ button {
         padding: 80px;
 
         h3 {
-          color: var(--theme-color1);
+          color: Black;
           text-transform: uppercase;
           font-size: 24px;
           font-weight: 400;
@@ -1848,7 +1848,7 @@ button {
 
         h1 {
           font-size: 72px;
-          color: var(--theme-color1);
+          color: Black;
           text-transform: uppercase;
           line-height: 1;
           margin-bottom: 5px;
@@ -1876,7 +1876,7 @@ button {
         }
 
         h4 {
-          color: var(--theme-color1);
+          color: Black;
           font-weight: 400;
           text-transform: capitalize;
         }
@@ -1991,7 +1991,7 @@ button {
 /* All product page */
 
 .allproduct-text {
-  background-color: var(--theme-color1);
+  background-color: Black;
   padding: 10px 0;
 
   h2 {
@@ -2013,7 +2013,7 @@ button {
   }
 
   .custom-input-group-text {
-    background-color: var(--theme-color1);
+    background-color: Black;
     color: white;
     border: none;
     padding: 20px;
@@ -2034,7 +2034,7 @@ button {
     }
 
     &:hover {
-      border: 1px solid var(--theme-color1);
+      border: 1px solid Black;
     }
   }
 
@@ -2068,7 +2068,7 @@ button {
   }
 
   .carousel-control-prev-icon {
-    background-color: var(--theme-color1);
+    background-color: Black;
   }
 
   /* Change the color of the right arrow */
@@ -2077,7 +2077,7 @@ button {
   }
 
   .carousel-control-next-icon {
-    background-color: var(--theme-color1);
+    background-color: Black;
   }
 
   /* Customize the slider navigator bullets */
@@ -2093,20 +2093,20 @@ button {
     width: 10px;
     height: 10px;
     margin: 0 5px;
-    border: 1px solid var(--theme-color1);
+    border: 1px solid Black;
     background-color: transparent;
     border-radius: 50%;
     cursor: pointer;
   }
 
   .carousel-indicators .active {
-    background-color: var(--theme-color1);
+    background-color: Black;
   }
 }
 
 .menu-banners {
-  width: 500px;
-  height: 258px;
+  width: auto;
+  height: auto;
   display: grid;
   gap: 3px;
 
@@ -2157,7 +2157,7 @@ button {
 
   .title {
     a {
-      color: var(--theme-color1);
+      color: Black;
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase;
@@ -2174,7 +2174,7 @@ button {
 
   .more-product {
     a {
-      color: var(--theme-color1);
+      color: Black;
       font-size: 14px;
       font-weight: 700;
 
@@ -2193,7 +2193,7 @@ button {
       display: none; // Hide on screens larger than 900px
 
       a {
-        color: var(--theme-color1);
+        color: Black;
         font-size: 14px;
         font-weight: 700;
 
@@ -2281,7 +2281,7 @@ button {
         &::before {
           width: 0;
           height: 0;
-          border-top: 60px solid var(--theme-color1);
+          border-top: 60px solid Black;
           border-right: 60px solid transparent;
           content: "";
           position: absolute;
@@ -2305,7 +2305,7 @@ button {
           display: block;
 
           &:hover {
-            background-color: var(--theme-color1);
+            background-color: Black;
             color: $white;
           }
         }
@@ -2324,7 +2324,7 @@ button {
 
           &:hover {
             i {
-              background-color: var(--theme-color1);
+              background-color: Black;
               color: $white;
             }
           }
@@ -2394,7 +2394,7 @@ button {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: var(--theme-color1);
+        background-color: Black;
         color: $white;
         display: flex;
         justify-content: center;
@@ -2432,7 +2432,7 @@ button {
         position: absolute;
         top: 10px;
         right: 10px;
-        color: var(--theme-color1);
+        color: Black;
         text-transform: uppercase;
         font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320)));
         font-weight: 700;
@@ -2623,7 +2623,7 @@ button {
                 12px + (14 - 12) * ((100vw - 320px) / (1920 - 320))
               );
               margin-left: 6px;
-              color: var(--theme-color1);
+              color: Black;
               margin-top: 0;
               justify-content: right;
             }
@@ -2698,7 +2698,7 @@ button {
 
             .condition-text {
               padding: 5px;
-              background-color: var(--theme-color1);
+              background-color: Black;
               color: $white;
               font-size: calc(
                 12px + (14 - 12) * ((100vw - 320px) / (1920 - 320))
@@ -2723,7 +2723,7 @@ button {
           }
 
           .price {
-            color: var(--theme-color1);
+            color: Black;
             font-size: calc(
               18px + (14 - 12) * ((100vw - 320px) / (1920 - 320))
             );
@@ -2906,7 +2906,7 @@ button {
         line-height: 1.4;
 
         span {
-          color: var(--theme-color1);
+          color: Black;
           font-weight: 700;
           font-size: 16px;
           line-height: 1;
@@ -2971,7 +2971,7 @@ button {
       transition: all 0.3s ease;
 
       &:hover {
-        border: 1px solid var(--theme-color1);
+        border: 1px solid Black;
       }
 
       img {
@@ -2988,7 +2988,7 @@ button {
         transition: all 0.3s ease;
 
         &:hover {
-          border: 1px solid var(--theme-color1);
+          border: 1px solid Black;
         }
       }
     }
@@ -3110,7 +3110,7 @@ button {
         .price {
           span {
             font-size: 16px;
-            color: var(--theme-color1);
+            color: Black;
             font-weight: 700;
             margin-right: 10px;
             line-height: 1;
@@ -3195,7 +3195,7 @@ button {
    16. Header CSS start
 ==============================*/
 .top-header {
-  background-color: var(--theme-color1);
+  background-color: Black;
   padding: 10px 0;
   z-index: 99;
 
@@ -3456,7 +3456,7 @@ button {
               border-bottom: none;
 
               a {
-                color: var(--theme-color1);
+                color: Black;
 
                 i {
                   font-size: 20px;
@@ -3479,7 +3479,7 @@ button {
             &:hover {
               > li {
                 a {
-                  color: var(--theme-color1);
+                  color: Black;
                 }
               }
             }
@@ -3519,7 +3519,7 @@ button {
 
             .cart-item {
               display: inline-block;
-              color: var(--theme-color1);
+              color: Black;
               font-weight: 700;
               text-transform: uppercase;
               font-family: $font_0, $font_1;
@@ -3558,7 +3558,7 @@ button {
         }
 
         .cart-block {
-          background-color: var(--theme-color1);
+          background-color: Black;
           padding: 15px 20px;
           margin-left: 20px;
           position: relative;
@@ -3581,7 +3581,7 @@ button {
             top: 3px;
             right: 15px;
             line-height: 0;
-            color: var(--theme-color1);
+            color: Black;
           }
 
           &:hover {
@@ -3689,7 +3689,7 @@ button {
           }
 
           .mor-slide-click {
-            color: var(--theme-color1);
+            color: Black;
           }
 
           &:hover {
@@ -3777,7 +3777,7 @@ button {
         position: relative;
 
         .cart-product {
-          background-color: var(--theme-color1);
+          background-color: Black;
           color: $white;
           width: 15px;
           height: 15px;
@@ -3883,7 +3883,7 @@ button {
           .navbar {
             display: flex;
             justify-content: center;
-            background-color: var(--theme-color1);
+            background-color: Black;
             padding: 28px 0;
 
             h5 {
@@ -3900,7 +3900,7 @@ button {
             height: 17px;
             padding: 0;
             background-color: $white;
-            color: var(--theme-color1);
+            color: Black;
             border-radius: 50%;
             font-size: 12px;
             display: flex;
@@ -3941,7 +3941,7 @@ button {
 
               &:hover {
                 > a {
-                  color: var(--theme-color1);
+                  color: Black;
                 }
 
                 > img {
@@ -3950,7 +3950,7 @@ button {
               }
 
               .mor-slide-click {
-                color: var(--theme-color1);
+                color: Black;
                 font-size: 16px;
                 font-weight: 700;
                 text-transform: capitalize;
@@ -3975,11 +3975,11 @@ button {
         .pixelstrap {
           li {
             .label-nav {
-              background-color: var(--theme-color1);
+              background-color: Black;
               top: 7px;
 
               &:before {
-                border-top: 5px solid var(--theme-color1);
+                border-top: 5px solid Black;
               }
             }
           }
@@ -4025,7 +4025,7 @@ button {
 
             .cart-item {
               display: inline-block;
-              color: var(--theme-color1);
+              color: Black;
               font-weight: 700;
               text-transform: uppercase;
               font-family: $font_0, $font_1;
@@ -4063,7 +4063,7 @@ button {
       display: flex;
 
       .gift-block {
-        background-color: var(--theme-color1);
+        background-color: Black;
         padding: 17px 28px;
         display: flex;
         align-items: center;
@@ -4101,12 +4101,12 @@ button {
 
         i {
           font-size: 28px;
-          color: var(--theme-color1);
+          color: Black;
         }
 
         span {
           font-size: 14px;
-          color: var(--theme-color1);
+          color: Black;
           margin-left: 15px;
           text-transform: uppercase;
           letter-spacing: 1px;
@@ -4187,7 +4187,7 @@ button {
               border-bottom: none;
 
               a {
-                color: var(--theme-color1);
+                color: Black;
 
                 i {
                   font-size: 20px;
@@ -4210,7 +4210,7 @@ button {
             &:hover {
               > li {
                 a {
-                  color: var(--theme-color1);
+                  color: Black;
                 }
               }
             }
@@ -4286,7 +4286,7 @@ button {
 
               &:hover {
                 > a {
-                  color: var(--theme-color1);
+                  color: Black;
                 }
 
                 > img {
@@ -4297,7 +4297,7 @@ button {
 
             .mor-slide-click {
               a {
-                color: var(--theme-color1);
+                color: Black;
                 font-size: 16px;
                 font-weight: 700;
                 display: block;
@@ -4429,7 +4429,7 @@ button {
 
               span {
                 padding: 10px 20px;
-                background-color: var(--theme-color1);
+                background-color: Black;
                 align-self: center;
                 border-radius: 0;
 
@@ -4513,7 +4513,7 @@ button {
             position: relative;
 
             .cart-item {
-              background-color: var(--theme-color1);
+              background-color: Black;
               height: 15px;
               width: 15px;
               border-radius: 50%;
@@ -4726,7 +4726,7 @@ button {
 
       i {
         font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));
-        color: var(--theme-color1);
+        color: Black;
         transform: rotate(-35deg);
       }
 
@@ -4820,7 +4820,7 @@ button {
 
       .mobile-cart {
         i {
-          color: var(--theme-color1);
+          color: Black;
           font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));
         }
       }
@@ -5256,7 +5256,7 @@ button {
     .media-view {
       h5 {
         text-transform: capitalize;
-        color: var(--theme-color1);
+        color: Black;
         line-height: 10px;
       }
     }
@@ -5287,7 +5287,7 @@ button {
           }
 
           h6 {
-            color: var(--theme-color1);
+            color: Black;
             font-weight: 700;
             margin-top: 3px;
 
@@ -5360,7 +5360,7 @@ button {
   &.social-inverse {
     li {
       &:hover {
-        background-color: var(--theme-color1);
+        background-color: Black;
       }
     }
   }
@@ -5604,7 +5604,7 @@ button {
                 border-right: 1px solid $light-border;
 
                 i {
-                  color: var(--theme-color1);
+                  color: Black;
                 }
               }
 
@@ -5644,7 +5644,7 @@ button {
               bottom: 0;
               width: 10px;
               height: 1px;
-              background-color: var(--theme-color1);
+              background-color: Black;
             }
           }
 
@@ -5768,7 +5768,7 @@ button {
             border-right: 1px solid $light-border;
 
             i {
-              color: var(--theme-color1);
+              color: Black;
             }
           }
 
@@ -5946,7 +5946,7 @@ button {
   .line {
     width: 50px;
     height: 2px;
-    background-color: var(--theme-color1);
+    background-color: Black;
     margin-top: 10px;
   }
 }
@@ -6145,7 +6145,7 @@ button {
       height: 3px;
       width: 100%;
       max-width: 100%;
-      background: var(--theme-color1);
+      background: Black;
       transform: translateX(-50%);
       transition: all 0.3s ease-out;
     }
@@ -6186,7 +6186,7 @@ button {
     line-height: 1;
 
     span {
-      color: var(--theme-color1);
+      color: Black;
     }
   }
 }
@@ -6261,7 +6261,7 @@ button {
       h3 {
         font-size: 20px;
         text-transform: capitalize;
-        color: var(--theme-color1);
+        color: Black;
         font-weight: 300;
         margin: 0;
       }
@@ -6292,7 +6292,7 @@ button {
         }
 
         a {
-          color: var(--theme-color1);
+          color: Black;
           margin-top: 10px;
           font-weight: 300;
           font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
@@ -6318,7 +6318,7 @@ button {
           width: max-content;
 
           a {
-            color: var(--theme-color1);
+            color: Black;
             font-weight: 300;
             font-size: calc(
               14px + (18 - 14) * ((100vw - 320px) / (1920 - 320))
@@ -6330,7 +6330,7 @@ button {
       }
 
       a {
-        color: var(--theme-color1);
+        color: Black;
         text-transform: capitalize;
         font-weight: 400;
         cursor: pointer;
@@ -6362,7 +6362,7 @@ button {
     padding-right: 35px;
 
     svg {
-      fill: var(--theme-color1);
+      fill: Black;
       width: 50px;
       height: 50px;
     }
@@ -6545,7 +6545,7 @@ button {
 // sitemap page //
 .sitemap_page {
   .title {
-    color: var(--theme-color1);
+    color: Black;
     text-transform: capitalize;
     font-weight: 700;
   }
@@ -6569,7 +6569,7 @@ button {
         }
 
         &:hover {
-          color: var(--theme-color1);
+          color: Black;
           transition: all 0.5s ease;
         }
       }
@@ -6631,7 +6631,7 @@ button {
       margin-bottom: 0;
 
       h2 {
-        color: var(--theme-color1);
+        color: Black;
         font-size: 30px;
         font-weight: 400;
       }
@@ -6668,7 +6668,7 @@ button {
 
     #owner {
       a {
-        color: var(--theme-color1);
+        color: Black;
       }
     }
   }
@@ -6783,7 +6783,7 @@ button {
   height: 100%;
 
   h2 {
-    color: var(--theme-color1);
+    color: Black;
     margin-bottom: 0;
   }
 }
@@ -6864,7 +6864,7 @@ button {
   }
 
   h4 {
-    color: var(--theme-color1);
+    color: Black;
     font-weight: 700;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -6923,7 +6923,7 @@ button {
         width: 40px;
 
         path {
-          fill: var(--theme-color1);
+          fill: Black;
         }
       }
 
@@ -6991,7 +6991,7 @@ button {
       }
 
       ::-webkit-scrollbar-thumb {
-        background-color: var(--theme-color1);
+        background-color: Black;
         border-radius: 6px;
       }
 
@@ -7614,7 +7614,7 @@ button {
 
   span {
     font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
-    background-color: var(--theme-color1);
+    background-color: Black;
     padding: 5px 20px;
     color: $white;
     border-radius: 3px;
@@ -7680,7 +7680,7 @@ button {
 
     .page-item.active {
       a {
-        color: var(--theme-color1);
+        color: Black;
         background-color: var(--theme-color2);
         border-color: $light-border;
       }
@@ -8446,14 +8446,14 @@ button {
 
           i {
             font-size: 24px;
-            color: var(--theme-color1);
+            color: Black;
           }
 
           h6 {
             text-transform: uppercase;
             padding-top: 5px;
             font-weight: 600;
-            color: var(--theme-color1);
+            color: Black;
             font-size: calc(
               14px + (18 - 14) * ((100vw - 320px) / (1920 - 320))
             );
@@ -8654,7 +8654,7 @@ button {
         }
 
         .td-color {
-          color: var(--theme-color1);
+          color: Black;
         }
 
         h2 {
@@ -8932,7 +8932,7 @@ button {
   }
 
   h5 {
-    color: var(--theme-color1);
+    color: Black;
     font-weight: 600;
     font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
     margin-top: 15px;
@@ -9032,7 +9032,7 @@ button {
       .popular-blog {
         li {
           .blog-date {
-            background-color: var(--theme-color1);
+            background-color: Black;
             height: 70px;
             width: 70px;
             margin: 0 15px 0 0;
@@ -9080,7 +9080,7 @@ button {
       }
 
       .date-label {
-        background-color: var(--theme-color1);
+        background-color: Black;
         color: $white;
         font-weight: 700;
         font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
@@ -9100,7 +9100,7 @@ button {
       display: flex;
 
       h6 {
-        color: var(--theme-color1);
+        color: Black;
         text-transform: uppercase;
         margin-bottom: 10px;
         font-weight: 700;
@@ -9261,7 +9261,7 @@ button {
 
     // &.slick-current {
     //   > div {
-    //     border-color: var(--theme-color1);
+    //     border-color: Black;
     //   }
     // }
   }
@@ -9332,7 +9332,7 @@ button {
     text-align: center;
     justify-content: center;
     font-size: 1rem;
-    color: var(--theme-color1);
+    color: Black;
     padding: 30px;
 
     h6 {
@@ -9397,7 +9397,7 @@ button {
 
       span {
         padding-left: 10px;
-        color: var(--theme-color1);
+        color: Black;
       }
     }
   }
@@ -9408,7 +9408,7 @@ button {
 
     .review {
       a {
-        color: var(--theme-color1);
+        color: Black;
         font-size: 14px;
         font-weight: 600;
 
@@ -9435,7 +9435,7 @@ button {
       border-radius: 8px;
 
       .seller-icon {
-        color: var(--theme-color1);
+        color: Black;
       }
 
       p {
@@ -9500,7 +9500,7 @@ button {
         float: right;
 
         a {
-          color: var(--theme-color1);
+          color: Black;
           letter-spacing: 0.05em;
           cursor: pointer;
         }
@@ -9636,7 +9636,7 @@ button {
           }
 
           &:hover {
-            color: var(--theme-color1);
+            color: Black;
           }
         }
 
@@ -9666,7 +9666,7 @@ button {
 
       &:hover {
         i {
-          color: var(--theme-color1);
+          color: Black;
           transition: all 0.5s ease;
         }
       }
@@ -9730,7 +9730,7 @@ button {
       }
 
       h4 {
-        color: var(--theme-color1);
+        color: Black;
       }
     }
   }
@@ -9977,13 +9977,13 @@ button {
         }
 
         .material-border {
-          border-bottom: 2px solid var(--theme-color1);
+          border-bottom: 2px solid Black;
           opacity: 0;
         }
       }
 
       .nav-link.active {
-        color: var(--theme-color1);
+        color: Black;
 
         & ~ .material-border {
           transition: all 0.3s ease;
@@ -10040,7 +10040,7 @@ button {
 
   .title {
     padding-right: 45px;
-    color: var(--theme-color1);
+    color: Black;
     padding-bottom: 20px;
   }
 
@@ -10112,13 +10112,13 @@ button {
 
         :hover {
           transition: all 0.3s ease;
-          color: var(--theme-color1);
+          color: Black;
         }
       }
     }
 
     .lbl-1 {
-      background-color: var(--theme-color1);
+      background-color: Black;
       padding: 2px 20px 2px 10px;
       display: inline-block;
       text-align: center;
@@ -10137,8 +10137,8 @@ button {
         top: 0;
         width: 0;
         height: 0;
-        border-top: 12px solid var(--theme-color1);
-        border-bottom: 13px solid var(--theme-color1);
+        border-top: 12px solid Black;
+        border-bottom: 13px solid Black;
         border-right: 7px solid $white;
       }
     }
@@ -10201,7 +10201,7 @@ button {
       .price {
         padding-bottom: 10px;
         font-size: 16px;
-        color: var(--theme-color1);
+        color: Black;
       }
     }
   }
@@ -10229,7 +10229,7 @@ button {
     border-top: 1px solid $light-border;
     border-bottom: 1px solid $light-border;
     width: 100%;
-    color: var(--theme-color1);
+    color: Black;
   }
 }
 
@@ -10243,7 +10243,7 @@ button {
 
 //short product
 .deal-title {
-  color: var(--theme-color1);
+  color: Black;
 }
 
 .short-product {
@@ -10322,7 +10322,7 @@ button {
 
         span {
           padding-left: 10px;
-          color: var(--theme-color1);
+          color: Black;
         }
       }
     }
@@ -10361,7 +10361,7 @@ button {
 
       .review {
         a {
-          color: var(--theme-color1);
+          color: Black;
           font-size: 14px;
           font-weight: 600;
 
@@ -10379,7 +10379,7 @@ button {
 
       .condition-text {
         padding: 5px;
-        background-color: var(--theme-color1);
+        background-color: Black;
         color: $white;
         border-radius: 3px;
         font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
@@ -10666,7 +10666,7 @@ button {
         position: relative;
         font-size: 18px;
         line-height: 20px;
-        color: var(--theme-color1);
+        color: Black;
         font-weight: 400;
         width: 35%;
         float: right;
@@ -10706,7 +10706,7 @@ button {
         position: relative;
         font-size: 18px;
         line-height: 20px;
-        color: var(--theme-color1);
+        color: Black;
         font-weight: 400;
       }
 
@@ -10806,10 +10806,10 @@ button {
       transition: all 0.5s ease;
 
       &.active {
-        color: var(--theme-color1);
+        color: Black;
 
         a {
-          color: var(--theme-color1);
+          color: Black;
         }
       }
 
@@ -10836,12 +10836,12 @@ button {
 
       &:hover {
         a {
-          color: var(--theme-color1);
+          color: Black;
           transition: all 0.5s ease;
         }
 
         padding-left: 10px;
-        color: var(--theme-color1);
+        color: Black;
         transition: all 0.5s ease;
       }
     }
@@ -10893,7 +10893,7 @@ button {
 
   .box {
     a {
-      color: var(--theme-color1);
+      color: Black;
       font-weight: 700;
     }
 
@@ -10922,7 +10922,7 @@ button {
         position: absolute;
         right: 0;
         top: 12px;
-        color: var(--theme-color1);
+        color: Black;
         font-weight: 700;
         font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
       }
@@ -10943,7 +10943,7 @@ button {
   }
 
   a {
-    color: var(--theme-color1);
+    color: Black;
     font-weight: 700;
     letter-spacing: 0.05em;
   }
@@ -10952,7 +10952,7 @@ button {
 .account-sidebar {
   display: none;
   cursor: pointer;
-  background-color: var(--theme-color1);
+  background-color: Black;
   color: $white;
   width: 30%;
   font-size: 16px;
@@ -10990,7 +10990,7 @@ button {
 
   &.order-fail {
     i {
-      color: var(--theme-color1);
+      color: Black;
     }
   }
 }
@@ -11421,7 +11421,7 @@ button {
           position: relative;
           width: 50px;
           height: 50px;
-          background-color: var(--theme-color1);
+          background-color: Black;
           border-radius: 50%;
 
           &:after {
@@ -11637,7 +11637,7 @@ button {
 
           h6 {
             text-transform: uppercase;
-            color: var(--theme-color1);
+            color: Black;
             margin-bottom: 0;
           }
         }
@@ -11656,7 +11656,7 @@ button {
       }
 
       &:hover {
-        background-color: var(--theme-color1);
+        background-color: Black;
         box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
         z-index: 10;
 
@@ -11893,7 +11893,7 @@ button {
       line-height: 1;
 
       &.active {
-        background-color: var(--theme-color1);
+        background-color: Black;
         color: $white;
       }
     }
@@ -11919,20 +11919,20 @@ button {
           padding: 0 25px;
 
           > a {
-            color: var(--theme-color1);
+            color: Black;
             font-size: 20px;
             line-height: 40px;
 
             &:hover,
             &:focus {
               text-decoration: none;
-              color: var(--theme-color1);
+              color: Black;
               outline: none;
             }
           }
 
           &.active {
-            background-color: var(--theme-color1);
+            background-color: Black;
 
             a {
               color: $white;
@@ -12028,7 +12028,7 @@ button {
       text-transform: uppercase;
       transform: translate(50%, -50%) rotate(-90deg);
       text-align: center;
-      background-color: var(--theme-color1);
+      background-color: Black;
       margin-bottom: 0;
       cursor: pointer;
     }
@@ -12151,7 +12151,7 @@ button {
             position: absolute;
             top: 6px;
             left: 0;
-            background-color: var(--theme-color1);
+            background-color: Black;
             height: 5px;
             content: "";
           }
@@ -12164,7 +12164,7 @@ button {
     }
 
     a.active {
-      color: var(--theme-color1);
+      color: Black;
       font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
     }
 
@@ -12512,7 +12512,7 @@ button {
               font-weight: 400;
 
               span {
-                color: var(--theme-color1);
+                color: Black;
                 font-size: 16px;
                 line-height: 1.5;
               }
@@ -12547,7 +12547,7 @@ button {
             padding: 10px 12px;
 
             &:hover {
-              color: var(--theme-color1);
+              color: Black;
               transition: all 0.5s ease;
             }
           }
@@ -12774,7 +12774,7 @@ button {
           text-transform: capitalize;
 
           &:hover {
-            color: var(--theme-color1);
+            color: Black;
           }
         }
       }
@@ -12796,7 +12796,7 @@ button {
 
     .forget-class {
       a {
-        color: var(--theme-color1);
+        color: Black;
         text-transform: capitalize;
         margin-top: 10;
       }
@@ -12822,7 +12822,7 @@ button {
   display: none;
   color: $white;
   text-align: center;
-  background: var(--theme-color1);
+  background: Black;
   border: none;
   font-size: 22px;
   padding: 7px;
@@ -13004,7 +13004,7 @@ button {
           }
 
           &::-webkit-scrollbar-thumb {
-            background: var(--theme-color1);
+            background: Black;
           }
 
           &::-webkit-scrollbar-thumb:hover {
@@ -13041,7 +13041,7 @@ button {
                   a {
                     h6 {
                       font-size: 16px;
-                      color: var(--theme-color1);
+                      color: Black;
                       text-transform: capitalize;
                       margin-bottom: 20px;
 
@@ -13089,7 +13089,7 @@ button {
                       text-transform: capitalize;
 
                       a {
-                        color: var(--theme-color1);
+                        color: Black;
                       }
                     }
                   }
@@ -13122,7 +13122,7 @@ button {
       border: none;
 
       span {
-        color: var(--theme-color1);
+        color: Black;
         font-size: 35px;
         text-shadow: none;
       }
@@ -13200,7 +13200,7 @@ button {
           font-weight: 500;
 
           b {
-            color: var(--theme-color1);
+            color: Black;
           }
         }
 
@@ -13246,7 +13246,7 @@ button {
 }
 
 .modal-close {
-  color: var(--theme-color1);
+  color: Black;
   font-size: 20px;
   text-shadow: none;
   position: absolute;

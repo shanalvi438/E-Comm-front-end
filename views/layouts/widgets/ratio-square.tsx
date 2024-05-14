@@ -95,7 +95,7 @@ const RatioSquare = () => {
       (async () => {
         try {
           axios
-            .get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/f_product`)
+            .get( `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/f_product`)
             .then((response) => {
               setProductData(response.data.FeaturesProduct);
               setLoading(false);
@@ -111,7 +111,7 @@ const RatioSquare = () => {
       })();
     } else {
       axios
-        .get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/s_product`)
+        .get( `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/s_product`)
         .then((response) => {
           setProductData(response.data.SponserdProduct);
           setCoupens(response.data.Coupons);

@@ -63,7 +63,7 @@ const Tracking: NextPage = () => {
         @keyframes pulse {
           0% {
             transform: scale(0.95);
-            box-shadow: 0 0 0 0 var(--theme-color1);
+            box-shadow: 0 0 0 0 Black;
           }
           70% {
             transform: scale(1);
@@ -110,13 +110,13 @@ const Tracking: NextPage = () => {
                       textAlign: "center",
                       backgroundColor:
                         index === currentStep
-                          ? "var(--theme-color1)"
+                          ? "Black"
                           : index < currentStep
-                          ? "var(--theme-color1)"
+                          ? "Black"
                           : "#808080",
                       border: `2px solid ${
                         index === currentStep
-                          ? "var(--theme-color1)"
+                          ? "Black"
                           : index < currentStep
                       }`,
                       color: "white",

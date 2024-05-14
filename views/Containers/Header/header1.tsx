@@ -69,9 +69,9 @@ const Header: NextPage<HeaderProps> = ({ cartPopupPosition, display }) => {
                   <Link href="/">
                     <a>
                       <Image
-                        src={`/images/layout-2/logo/im-logo.png`}
+                        src={`/images/layout-2/logo/logo.png`}
                         className="img-fluid logo "
-                        width="200px"
+                        width="100%"
                         height="100%"
                         alt="logo"
                         layout="intrinsic"
@@ -110,7 +110,7 @@ const Header: NextPage<HeaderProps> = ({ cartPopupPosition, display }) => {
                               position: "absolute",
                               top: "-1.0rem",
                               right: "0px",
-                              backgroundColor: "var(--theme-color1)",
+                              backgroundColor: "Black",
                               color: "white",
                               borderRadius: "50%",
                               height: "15px",
@@ -161,7 +161,7 @@ const Header: NextPage<HeaderProps> = ({ cartPopupPosition, display }) => {
               <div
                 id="trackorder"
                 className="input-group mb-3 rounded rounded-pill shadow-sm"
-                style={{ backgroundColor: "#0272BC" }}
+                style={{ backgroundColor: "Black" }}
               >
                 <input
                   type="text"
@@ -177,9 +177,9 @@ const Header: NextPage<HeaderProps> = ({ cartPopupPosition, display }) => {
                     className="input-group-text rounded-pill"
                     id="basic-addon2"
                     style={{
-                      backgroundColor: "#0272BC",
+                      backgroundColor: "black",
                       color: "white",
-                      borderColor: "#0272BC",
+                      borderColor: "black",
                     }}
                   >
                     <FontAwesomeIcon

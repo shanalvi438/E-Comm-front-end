@@ -69,13 +69,13 @@ const TopBar: React.FC = () => {
               <div className="shpping-order">
                 <Link href={`${process.env.NEXT_PUBLIC_BACKEND_URL}`}>
                   <a target="__blank">
-                    <h6>{t("Sell on Industry Mall")} </h6>
+                    <h6>{t("Gul Feasy Shops")} </h6>
                   </a>
                 </Link>
               </div>
               <div className="app-link">
-                <h6>{t("Download app")}</h6>
-                <ul>
+                {/* <h6>{t("Download app")}</h6> */}
+                {/* <ul>
                   <li>
                     <a>
                       <i className="fa fa-apple"></i>
@@ -91,7 +91,7 @@ const TopBar: React.FC = () => {
                       <i className="fa fa-windows"></i>
                     </a>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </Col>
@@ -141,7 +141,7 @@ const TopBar: React.FC = () => {
                                         icon={faMessage}
                                         style={{
                                           fontSize: "14px",
-                                          color: "var(--theme-color1)",
+                                          color: "Black",
                                         }}
                                       />
 

@@ -89,7 +89,7 @@ const PaymentWithdraw = ({ userData }) => {
                     height: "40px",
                     lineHeight: "30px",
                     textAlign: "center",
-                    backgroundColor: index === currentStep ? "var(--theme-color1)" : "#fff",
+                    backgroundColor: index === currentStep ? "Black" : "#fff",
                     color: index === currentStep ? "#fff" : "#5bc0de",
                     border: "2px solid #5bc0de",
                     borderRadius: "50%",

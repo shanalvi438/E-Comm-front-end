@@ -16,9 +16,7 @@ export const ApiDataProvider = ({ children }) => {
   useEffect(() => {
     const fetchAndCacheData = async () => {
       try {
-        const response = await fetch(
-          `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/home_page_all`
-        );
+        const response = await fetch( `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/home_page_all`);
         if (response.ok) {
           const data = await response.json();
 

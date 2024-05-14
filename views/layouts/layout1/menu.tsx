@@ -28,7 +28,7 @@ const Menu = ({ meneData }: MenuProps) => {
   };
 
   function transformImageUrl(apiImageUrl) {
-    return `${process.env.NEXT_PUBLIC_BACKEND_URL}/${apiImageUrl.replace(
+    return `${process.env.NEXT_PUBLIC_BACKEND_URL}${apiImageUrl.replace(
       / /g,
       "%20"
     )}`;
@@ -199,7 +199,7 @@ const Menu = ({ meneData }: MenuProps) => {
         <div className="menu-banners">
           <Media
             className="d-block w-100 b-img"
-            src="/images/layout-2/slider/nextimg.jpeg"
+            src="/images/layout-2/slider/nextimg.jpg"
             alt="Banner 1"
           />
         </div>

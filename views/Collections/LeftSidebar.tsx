@@ -55,14 +55,14 @@ const LeftSidebarCollection: NextPage<LeftSidebarCollectionProps> = ({
        
         if (cat) {
           const res = await axios.get(
-            `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/p_b_cat/${cat}`
+             `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/p_b_cat/${cat}`
           );
           setProducts(res.data.products);
           setNonProductData(res.data.category);
         }
         if (sub_cat) {
           const res = await axios.get(
-            `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/p_b_sub/${sub_cat}`
+             `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/p_b_sub/${sub_cat}`
           );
           setProducts(res.data.products);
           setNonProductData(res.data.sub_cat);
@@ -110,7 +110,7 @@ const LeftSidebarCollection: NextPage<LeftSidebarCollectionProps> = ({
       return ""; // or some default URL or error handling
     }
 
-    const baseUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}/`;
+    const baseUrl =  `${process.env.NEXT_PUBLIC_BACKEND_URL}/`;
     return `${baseUrl}${apiImageUrl.replace(/ /g, "%20")}`;
   }
 

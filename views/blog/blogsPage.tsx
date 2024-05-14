@@ -8,7 +8,7 @@ import axios from "axios";
 import LatestBlogsSlider from "./common/LatestBlogsSlider";
 
 const BlogsPage: NextPage = () => {
-  const getRoute = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogs`;
+  const getRoute =  `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogs`;
   const [data, setData] = useState([]);
   const [trendingNewsData, setTrendingNewsData] = useState([]);
   const [technologyData, setTechnologyData] = useState([]);

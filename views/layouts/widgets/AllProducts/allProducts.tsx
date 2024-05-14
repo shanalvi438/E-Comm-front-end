@@ -22,7 +22,7 @@ const AllProducts = () => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/h_product`);
+        const response = await axios.get( `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/h_product`);
         setProductsData(Object.values(response.data.HotProduct));;
         setLoading(false);
       } catch (error) {

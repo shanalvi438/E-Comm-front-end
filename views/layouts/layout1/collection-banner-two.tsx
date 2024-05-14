@@ -9,7 +9,7 @@ interface Banners {
 
 const CollectionBannerList = ({ banner }) => {
   function transformImageUrl(apiImageUrl) {
-    return `${process.env.NEXT_PUBLIC_BACKEND_URL}/${apiImageUrl.replace(
+    return `${process.env.NEXT_PUBLIC_BACKEND_URL}${apiImageUrl.replace(
       / /g,
       "%20"
     )}`;

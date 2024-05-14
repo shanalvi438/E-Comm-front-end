@@ -19,7 +19,7 @@ function transformImageUrl(apiImageUrl) {
     return "";
   }
 
-  const baseUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}/`;
+  const baseUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}`;
   const url = `${baseUrl}${apiImageUrl.replace(/ /g, "%20")}`;
   return url;
 }
@@ -45,9 +45,10 @@ const CollectionBanner: NextPage<CollectionBannerProps> = ({ cat }) => {
         <Media src={transformImageUrl(cat.img)} className="img-fluid" alt="" />
       </a>
       <div className="top-banner-content small-section">
-        <h1>{ cat.name}</h1>
+        <h1>{cat.name}</h1>
 
-        {/* {cat.sub_categories ? (
+        {
+        /* {cat.sub_categories ? (
           <div className="top-banner-content small-section">
             {cat.sub_categories.length > 8 ? (
               <div
@@ -146,7 +147,8 @@ const CollectionBanner: NextPage<CollectionBannerProps> = ({ cat }) => {
           </div>
         ) : (
           <div className="text-center">No Sub categories available</div>
-        )} */}
+        )} */
+        }
 
 
       </div>

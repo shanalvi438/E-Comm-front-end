@@ -28,7 +28,7 @@ const Wishlist: NextPage = () => {
                             style={{
                               position: "absolute",
                               top: "15px",
-                              backgroundColor: "var(--theme-color1)", 
+                              backgroundColor: "Black", 
                               color: "white",
                               borderRadius: "50%",
                               height: "15px",

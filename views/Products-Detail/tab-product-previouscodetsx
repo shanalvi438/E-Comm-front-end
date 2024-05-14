@@ -50,7 +50,7 @@ const TabProduct: React.FC<ProductDeskProps> = ({ item }) => {
   const product = item;
 
   function transformImageUrl(apiImageUrl) {
-    return `${process.env.NEXT_PUBLIC_BACKEND_URL}/${apiImageUrl.replace(
+    return `${process.env.NEXT_PUBLIC_BACKEND_URL}${apiImageUrl.replace(
       / /g,
       "%20"
     )}`;

@@ -267,7 +267,7 @@ $theme-deafult__toggle-spacing: floor($theme-deafult__item-height * 0.1);
 }
 .new-tag {
   padding-left: 3px;
-  color: var(--theme-color1);
+  color: Black;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
@@ -278,7 +278,7 @@ $theme-deafult__toggle-spacing: floor($theme-deafult__item-height * 0.1);
     position: absolute;
     top: -5px;
     right: -10px;
-    color: var(--theme-color1);
+    color: Black;
     font-size: 12px;
     font-weight: 700;
   }
@@ -322,7 +322,7 @@ $theme-deafult__toggle-spacing: floor($theme-deafult__item-height * 0.1);
       letter-spacing: 0.07em;
     }
     &:hover {
-      color: var(--theme-color1);
+      color: Black;
     }
     // &.disabled {
     //   color: $theme-deafult__collapsible-item-disabled-color;
@@ -392,7 +392,7 @@ $theme-deafult__toggle-spacing: floor($theme-deafult__item-height * 0.1);
     }
   }
   .icon-trend {
-    color: var(--theme-color1);
+    color: Black;
   }
   .full-mega-menu,
   .clothing-menu {
@@ -511,7 +511,7 @@ $theme-deafult__toggle-spacing: floor($theme-deafult__item-height * 0.1);
   }
   .label-nav {
     position: absolute;
-    background-color: var(--theme-color1);
+    background-color: Black;
     padding: 2px 7px;
     color: $white;
     top: 7px;
@@ -526,14 +526,14 @@ $theme-deafult__toggle-spacing: floor($theme-deafult__item-height * 0.1);
       height: 0;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
-      border-top: 5px solid var(--theme-color1);
+      border-top: 5px solid Black;
       top: 15px;
       left: 5px;
     }
     &.label-red {
-      background-color: var(--theme-color1);
+      background-color: Black;
       &:before {
-        border-top: 5px solid var(--theme-color1);
+        border-top: 5px solid Black;
       }
     }
   }
@@ -656,7 +656,7 @@ $theme-deafult__toggle-spacing: floor($theme-deafult__item-height * 0.1);
         top: -8px;
         right: 0px;
         color: white;
-        background-color: var(--theme-color1);
+        background-color: Black;
         padding: 2px 7px;
         text-transform: uppercase;
         font-size: 9px;
@@ -914,7 +914,7 @@ $theme-deafult__toggle-spacing: floor($theme-deafult__item-height * 0.1);
           content: "";
           height: 5px;
           width: 0;
-          background-color: var(--theme-color1);
+          background-color: Black;
           transition: 0.5s ease;
           opacity: 0.12;
         }
